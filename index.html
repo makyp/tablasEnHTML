@@ -12,14 +12,16 @@
 
         table {
             width: 80px;
-            border-collapse: collapse;
             align-self: center;
         }
 
         th {
             text-align: center;
             background-color: transparent;
-            border: hidden
+            border: hidden;
+            padding: 8px ;
+            font-size: 14pt;
+            
         }
 
         td {
@@ -32,17 +34,9 @@
         caption {
             background-color: #032E4C;
             color: #ffffff;
-            font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
             padding: 12px;
             font-size: 30pt;
-        }
-
-        .verticalText {
-            rotate: -90deg;
-        }
-
-        .Tablalateral {
-            text-align: start;
         }
 
         .cell-content {
@@ -54,19 +48,23 @@
         .cell-content img {
             max-width: 50%;
         }
-        
-        
+
+        .Secundaria {
+            border: 2px solid #032E4C;
+            padding: 15px;
+            text-align: start;
+        }
     </style>
 </head>
 
 <body>
     <div class="table-container">
         <div class="table-wrapper">
-            <table>
+            <table style="border-collapse: collapse;">
                 <caption><b>The Periodic Table of Commodities Returns 2022</b></caption>
                 <tbody style="border: hidden">
                     <tr>
-                        <td class="verticalText" rowspan="17">Performance</td>
+                        <td rowspan="17"><img src="Performance.png" alt="Imagen 4"></td>
                     </tr>
                     <tr>
                         <th>2013</th>
@@ -124,7 +122,8 @@
                         <td rowspan="11">
 
                             <table class="Secundaria">
-                                <caption style="font-size: smaller;"><b>Legend</b></caption>
+
+                                <caption style="font-size: smaller; text-align: left;"><b>Legend</b></caption>
                                 <tr>
                                     <td style="background-color: #47563D ;"><span style="color: aliceblue;">
                                             <b>Al</b></span></td>
@@ -171,8 +170,9 @@
                                     <td>Lithium</td>
                                 </tr>
                                 <tr>
-                                    <td class="cell-content" style="background-color: #54B1BF ;"><span style="color: aliceblue;">
-                                        <img src="Natural.png" alt="Imagen 4"></span></td>
+                                    <td class="cell-content" style="background-color: #54B1BF ;"><span
+                                            style="color: aliceblue;">
+                                            <img src="Natural.png" alt="Imagen 4"></span></td>
                                     <td style="font-size: 11pt;">Narutal Gas</td>
                                 </tr>
                                 <tr>
@@ -209,6 +209,9 @@
                                     <td>Zinc</td>
                                 </tr>
                             </table>
+
+
+
 
                         </td>
                     </tr>
@@ -587,7 +590,7 @@
                         </td>
 
                         <td rowspan="3">
-                            <img style="max-height: 110px;" src="Aggad.png" alt="Imagen 4">
+                            <img style="max-height: 150px;" src="Aggad.png" alt="Imagen 4">
                         </td>
 
 
@@ -658,7 +661,20 @@
 
                 </tbody>
                 <tfoot>
-                    <tr><td colspan="23" style="font-size: 9pt;">Natural resources are the building blocks of the world, essential to progress and prosperity. These commodities, like all investments, can have wide price fluctuations over time. This table shows the ebb and flow of commodity prices over the past decade and illustrates the principle of mean reversion-the concept that returns eventually move back towards their mean or average. The price movement of commodities is historically both seasonal and cyclical. That's why when investing In natural resources, we believe it is Important for your portfolio to hold a diversified basket of commodities and to be actively managed by professionals who understand these specialized assets and the global trends impacting them. As with all investments, diversification does not protect an investor from market risks and does not assure a profit, and of course, past performance does not guarantee future results. Returns are based on historical spot prices or futures prices.</td></tr>
+                    <tr>
+                        <td colspan="23" style="font-size: 9pt;">Natural resources are the building blocks of the world,
+                            essential to progress and prosperity. These commodities, like all investments, can have wide
+                            price fluctuations over time. This table shows the ebb and flow of commodity prices over the
+                            past decade and illustrates the principle of mean reversion-the concept that returns
+                            eventually move back towards their mean or average. The price movement of commodities is
+                            historically both seasonal and cyclical. That's why when investing In natural resources, we
+                            believe it is Important for your portfolio to hold a diversified basket of commodities and
+                            to be actively managed by professionals who understand these specialized assets and the
+                            global trends impacting them. As with all investments, diversification does not protect an
+                            investor from market risks and does not assure a profit, and of course, past performance
+                            does not guarantee future results. Returns are based on historical spot prices or futures
+                            prices.</td>
+                    </tr>
                 </tfoot>
                 <!-- Agrega las filas y colores que desees para la primera tabla -->
             </table>
